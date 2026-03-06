@@ -300,7 +300,7 @@ const AnalyticsDashboard: React.FC = () => {
   return (
     <div
       className="main-content animate__animated animate__fadeIn"
-      style={{ padding: "2.2rem" }}
+      style={{ padding: "2.2rem", margin: "0 auto", maxWidth: 900 }}
     >
       <ToastContainer />
       <div className="d-flex flex-wrap gap-2 mb-4 align-items-center">
@@ -398,7 +398,7 @@ const AnalyticsDashboard: React.FC = () => {
               <div key={label} className="col-6 col-lg-3">
                 <div
                   className="prod-card text-center"
-                  style={{ margin: 0, background: bg }}
+                  style={{ margin: 0, background: bg, padding: "10px" }}
                 >
                   <div className="header-icon mx-auto mb-2">
                     <i className={`bi ${icon}`} />
@@ -447,7 +447,7 @@ const AnalyticsDashboard: React.FC = () => {
               Create, view and manage analytics reports.
             </p>
           </div>
-          <div className="prod-card">
+          <div className="prod-card" style={{ padding: "10px" }}>
             <div className="d-flex justify-content-between align-items-center mb-4">
               <span
                 style={{

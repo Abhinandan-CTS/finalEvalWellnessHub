@@ -152,6 +152,9 @@ export default function Navbar() {
             >
               <i className="bi bi-trophy" /> Challenges
             </Link>
+            <Link to="/admin/goals" className={linkClass("/admin/goals")}>
+              <i className="bi bi-bullseye" /> Goals
+            </Link>
             <Link to="/analytics" className={linkClass("/analytics")}>
               <i className="bi bi-bar-chart-line" /> Analytics
             </Link>

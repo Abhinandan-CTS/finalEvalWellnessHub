@@ -119,7 +119,7 @@ export default function AdminUsers(): JSX.Element {
   ];
 
   return (
-    <div className="main-content animate__animated animate__fadeIn">
+    <div className="animate__animated animate__fadeIn">
       <Toaster position="top-right" />
 
       <div className="d-flex justify-content-between align-items-center mb-4">

@@ -52,7 +52,10 @@ export default function AdminDashboard(): JSX.Element {
   ];
 
   return (
-    <div className="main-content animate__animated animate__fadeIn">
+    <div
+      className=" animate__animated animate__fadeIn"
+      style={{ margin: "0 auto", maxWidth: 900 }}
+    >
       <div className="page-header mb-4">
         <h1 className="page-title">
           <i
@@ -65,40 +68,6 @@ export default function AdminDashboard(): JSX.Element {
           Welcome back, <strong>{name || "Admin"}</strong>! Here's your control
           panel.
         </p>
-      </div>
-
-      <div className="row g-4 mb-4">
-        {[
-          {
-            icon: "bi-people",
-            label: "Quick Actions",
-            val: "6 Modules",
-            sub: "Everything you need, one click away",
-          },
-          {
-            icon: "bi-shield-check",
-            label: "System Status",
-            val: "Online",
-            sub: "All services running",
-          },
-        ].map((s) => (
-          <div className="col-12 col-sm-6 col-lg-3" key={s.label}>
-            <div className="stat-card">
-              <div className="stat-icon">
-                <i className={`bi ${s.icon}`} />
-              </div>
-              <div>
-                <div className="stat-value">{s.val}</div>
-                <div className="stat-label">{s.label}</div>
-                <div
-                  style={{ fontSize: "0.72rem", color: "var(--muted-text)" }}
-                >
-                  {s.sub}
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
       </div>
 
       <h5 className="mb-3 fw-semibold" style={{ color: "var(--primary-navy)" }}>

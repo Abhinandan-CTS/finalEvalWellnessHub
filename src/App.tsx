@@ -112,6 +112,16 @@ export default function App() {
         }
       />
       <Route
+        path="/admin/goals"
+        element={
+          <ProtectedRoute allowedRoles={["ADMIN"]}>
+            <AppLayout>
+              <GoalPage />
+            </AppLayout>
+          </ProtectedRoute>
+        }
+      />
+      <Route
         path="/analytics"
         element={
           <ProtectedRoute allowedRoles={["ADMIN"]}>

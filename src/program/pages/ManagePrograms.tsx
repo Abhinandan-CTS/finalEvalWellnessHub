@@ -204,7 +204,7 @@ export default function ManagePrograms() {
   return (
     <div
       className="main-content animate__animated animate__fadeIn"
-      style={{ padding: "2.2rem" }}
+      style={{ padding: "2.2rem", margin: "0 auto", maxWidth: 1200 }}
     >
       <ToastContainer position="top-right" autoClose={3000} />
 
