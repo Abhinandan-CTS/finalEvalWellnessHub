@@ -21,7 +21,6 @@ import ActivityManagerDashboard from "./activity/pages/ActivityManagerDashboard"
 import ActivityNotificationsPage from "./activity/pages/ActivityNotificationsPage";
 import ActivitySettingsPage from "./activity/pages/ActivitySettingsPage";
 import ActivityHelpPage from "./activity/pages/ActivityHelpPage";
-import ActivityGoalsPage from "./activity/pages/ActivityGoalsPage";
 
 // Challenges module
 import ChallengePage from "./challenges/pages/ChallengePage";
@@ -211,7 +210,7 @@ export default function App() {
         element={
           <ProtectedRoute allowedRoles={["EMPLOYEE"]}>
             <AppLayout>
-              <ActivityGoalsPage />
+              <GoalPage />
             </AppLayout>
           </ProtectedRoute>
         }
